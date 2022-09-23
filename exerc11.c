@@ -15,8 +15,10 @@ int main(void)
    printf("Digite quantos Alunas tem na turma:");
    scanf("%d", &alunas);
 
+   // Verifica se temos mais alunas ou alunos
    if (alunas > alunos)
    {
+      // Se tiver mais alunas, calcula o total da sala e exibe
       int total_alunos = alunas + alunos;
       printf("A turma possui mais Alunas do que Alunos, e o total da turma é de: %d", total_alunos);
    }
