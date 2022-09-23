@@ -1,4 +1,4 @@
-// Implemente um programa que solicita as notas das duas provas feitas por cada um dos alunos de uma turma (as notas têm de estar no intervalo [0 10]) e imprime para cada um a média das notas. O programa deve parar imediatamente após ter sido digitado o valor 50 para a nota da primeira prova.
+// Implemente um programa que solicita as notas das duas provas feitas por cada um dos alunos de uma turma (as notas tï¿½m de estar no intervalo [0 10]) e imprime para cada um a mï¿½dia das notas. O programa deve parar imediatamente apï¿½s ter sido digitado o valor 50 para a nota da primeira prova.
 
 #include <stdio.h>
 #include <locale.h>
@@ -21,15 +21,15 @@ int main(void)
             printf("Digite a segunda nota do aluno:");
             scanf("%f", &nota2);
 
-            // Cálculo da média
+            // Cï¿½lculo da mï¿½dia
 
             float media = (nota1 + nota2) / 2;
 
-            printf("%.2f\n\n", media);
+            printf("O aluno apresentou mÃ©dia: %.2f\n\n", media);
         }
 
-        // Verifica se o usuário deseja calcular a média de outro aluno.
-        printf("Deseja calcular a média de outro aluno?");
+        // Verifica se o usuï¿½rio deseja calcular a mï¿½dia de outro aluno.
+        printf("Deseja calcular a mï¿½dia de outro aluno?");
         scanf("%s", &continuar);
         continuar = toupper(continuar);
 
