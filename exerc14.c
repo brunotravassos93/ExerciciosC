@@ -7,11 +7,13 @@
 int main()
 {
    setlocale(LC_ALL, "Portuguese");
+
+   // Variáveis
    float temperaturaFahrenheit[36] = {40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75};
    float temperaturaCelsius[36];
    int i, j = 0;
 
-
+   // Conversão de Fahrenheit para Celsius
    for(i = 0; i <= 35; i++) {
       temperaturaCelsius[j] = (temperaturaFahrenheit[i] - 32.0) * (5.0 / 9.0);
       j++;
