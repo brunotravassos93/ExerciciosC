@@ -1,4 +1,4 @@
-// Escreva um programa que leia doze números do tipo inteiro ao usuário. Separe esses números em pares e ímpares e os armazenem em dois outros vetores separando pares e ímpares, exibindo os resultados na tela.
+// Escreva um programa que leia doze nï¿½meros do tipo inteiro ao usuï¿½rio. Separe esses nï¿½meros em pares e ï¿½mpares e os armazenem em dois outros vetores separando pares e ï¿½mpares, exibindo os resultados na tela.
 
 #include <stdio.h>
 #include <locale.h>
@@ -7,19 +7,19 @@ int main(void)
 {
    setlocale(LC_ALL, "Portuguese");
 
-   // Variáveis
+   // Variï¿½veis
 
    int numeros[12], i, pares[12], impares[12];
 
-   // Armazenando os 12 números no vetor
+   // Armazenando os 12 nï¿½meros no vetor
    for (i = 0; i < 12; i++)
    {
-      printf("Digite o %dº número: \n", i + 1);
+      printf("Digite o %dï¿½ nï¿½mero: \n", i + 1);
       scanf("%d", &numeros[i]);
    }
 
-   
-   printf("Estes números são pares: ");
+   // VerificaÃ§Ã£o dos nÃºmeros pares
+   printf("Estes nï¿½meros sï¿½o pares: ");
    for (i = 0; i < 12; i++)
    {
       if (numeros[i] % 2 == 0)
@@ -30,7 +30,9 @@ int main(void)
    }
 
    printf("\n\n");
-   printf("Estes números são ímpares: ");
+
+   // VerificaÃ§Ã£o dos nÃºmeros Ã­mpares
+   printf("Estes nï¿½meros sï¿½o ï¿½mpares: ");
    for (i = 0; i < 12; i++)
    {
       if (numeros[i] % 2 != 0)
